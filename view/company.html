@@ -1,0 +1,12 @@
+<ul class="list-group">
+   <li class="list-group-item list-group-item-default"><h4>{{company.name}}</h4></li>
+   <li class="list-group-item list-group-item-default">{{company.product}}</li>
+   <li class="list-group-item list-group-item-default">{{company.profile}}</li>
+   <li class="list-group-item list-group-item-default">{{company.welfare}}</li>
+   <li class="list-group-item" ng-repeat="job in company.jobs">
+      <h5>{{job.job}}</h5>
+      <h5>{{job.appear_date}}</h5>
+      <p>{{job.description}}</p>
+   </li>
+   <a href="./#/index" class="list-group-item list-group-item-success">Back</a>
+</ul>
