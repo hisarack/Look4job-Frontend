@@ -1,6 +1,11 @@
 <div infinite-scroll="getCompanyList()" infinite-scroll-distance='2'>
 <ul class="list-group">
-   <a  href="./#/c/{{company.id}}" ng-repeat="company in companyList" class="list-group-item">
+   <li class="list-group-item list-group-item-default">{{curKeywordName}}</li>
+</ul>
+<ul class="list-group">
+   <a  href="./#/c/{{curKeywordId}}/{{company.index}}" 
+       ng-repeat="company in companyList" 
+       class="list-group-item">
       <span class="badge">{{company.activate}} Days</span>
       <p>{{company.name}}</p>
    </a>
